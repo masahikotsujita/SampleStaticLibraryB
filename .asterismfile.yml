@@ -1,5 +1,7 @@
-name: SampleStaticLibrary
-sln_path: Project/windows/SampleStaticLibrary.sln
+name: SampleStaticLibraryB
+sln_path: Project/windows/SampleStaticLibraryB.sln
+dependencies:
+  - masahikotsujita/SampleStaticLibraryA
 artifacts:
   - src: Include/*
     dst: ${ARTIFACTS_ROOT}/include/
