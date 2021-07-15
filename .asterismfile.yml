@@ -3,8 +3,7 @@ sln_path: Project/windows/SampleStaticLibraryB.sln
 dependencies:
   - masahikotsujita/SampleStaticLibraryA
 artifacts:
-  - src: Include/*
-    dst: ${ARTIFACTS_ROOT}/include/
-  - src: Dist/*
-    dst: ${ARTIFACTS_ROOT}/lib/
-
+  include_headers:
+    - Include/*
+  link_libraries:
+    - Dist/SampleStaticLibraryB_${PLATFORM}_${CONFIGURATION}.lib
